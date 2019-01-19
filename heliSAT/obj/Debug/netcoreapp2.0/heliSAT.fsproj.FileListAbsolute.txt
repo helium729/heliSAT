@@ -1,0 +1,8 @@
+D:\MacroHard\Projects\heliSAT\heliSAT\bin\Debug\netcoreapp2.0\heliSAT.deps.json
+D:\MacroHard\Projects\heliSAT\heliSAT\bin\Debug\netcoreapp2.0\heliSAT.runtimeconfig.json
+D:\MacroHard\Projects\heliSAT\heliSAT\bin\Debug\netcoreapp2.0\heliSAT.runtimeconfig.dev.json
+D:\MacroHard\Projects\heliSAT\heliSAT\bin\Debug\netcoreapp2.0\heliSAT.dll
+D:\MacroHard\Projects\heliSAT\heliSAT\bin\Debug\netcoreapp2.0\heliSAT.pdb
+D:\MacroHard\Projects\heliSAT\heliSAT\obj\Debug\netcoreapp2.0\heliSAT.fsprojAssemblyReference.cache
+D:\MacroHard\Projects\heliSAT\heliSAT\obj\Debug\netcoreapp2.0\heliSAT.dll
+D:\MacroHard\Projects\heliSAT\heliSAT\obj\Debug\netcoreapp2.0\heliSAT.pdb
