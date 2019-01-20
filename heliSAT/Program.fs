@@ -1,6 +1,7 @@
 ﻿// This program is my first project in F#
 // It probably looks bad
 // For several times I wanted to write a lib in C# and just call it. :P
+// Learning Functional programming is fun and also painful
 
 open System
 open System.IO
