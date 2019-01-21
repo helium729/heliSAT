@@ -9,3 +9,14 @@ C:\Users\helium729\source\repos\helium729\heliSAT\heliSAT\obj\Debug\netcoreapp2.
 C:\Users\helium729\source\repos\helium729\heliSAT\heliSAT\obj\Debug\netcoreapp2.1\heliSAT.dll
 C:\Users\helium729\source\repos\helium729\heliSAT\heliSAT\obj\Debug\netcoreapp2.1\heliSAT.pdb
 C:\Users\helium729\source\repos\helium729\heliSAT\heliSAT\obj\Debug\netcoreapp2.1\heliSAT.csprojAssemblyReference.cache
+D:\MacroHard\Projects\heliSAT\heliSAT\bin\Debug\netcoreapp2.1\heliSAT.deps.json
+D:\MacroHard\Projects\heliSAT\heliSAT\bin\Debug\netcoreapp2.1\heliSAT.runtimeconfig.json
+D:\MacroHard\Projects\heliSAT\heliSAT\bin\Debug\netcoreapp2.1\heliSAT.runtimeconfig.dev.json
+D:\MacroHard\Projects\heliSAT\heliSAT\bin\Debug\netcoreapp2.1\heliSAT.dll
+D:\MacroHard\Projects\heliSAT\heliSAT\bin\Debug\netcoreapp2.1\heliSAT.pdb
+D:\MacroHard\Projects\heliSAT\heliSAT\obj\Debug\netcoreapp2.1\heliSAT.csprojAssemblyReference.cache
+D:\MacroHard\Projects\heliSAT\heliSAT\obj\Debug\netcoreapp2.1\heliSAT.csproj.CoreCompileInputs.cache
+D:\MacroHard\Projects\heliSAT\heliSAT\obj\Debug\netcoreapp2.1\heliSAT.AssemblyInfoInputs.cache
+D:\MacroHard\Projects\heliSAT\heliSAT\obj\Debug\netcoreapp2.1\heliSAT.AssemblyInfo.cs
+D:\MacroHard\Projects\heliSAT\heliSAT\obj\Debug\netcoreapp2.1\heliSAT.dll
+D:\MacroHard\Projects\heliSAT\heliSAT\obj\Debug\netcoreapp2.1\heliSAT.pdb

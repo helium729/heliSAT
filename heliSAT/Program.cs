@@ -31,11 +31,13 @@ namespace heliSAT
     class Program
     {
         static int v_size, c_size;
-        static bool unsat;
+        static bool unbranch, unsingle;
 
         static void Main(string[] args)
         {
-            unsat = false;
+            bool unsat = false;
+            unsingle = false;
+            unbranch = false;
             Console.WriteLine("Hello World!");
             if (args.Length == 0)
             {
@@ -52,20 +54,51 @@ namespace heliSAT
                 suppose[i] = null;
 
             bool sing = true;
-            int susPointer = 0;
-            Dictionary<int, bool> bk = new Dictionary<int, bool>();
+            var bkResult = new Dictionary<int, bool>();
+            var bkClauses = new List<Dictionary<int, bool>>();
+            bkClauses = clauses;
+            bkResult = result;
 
-            //ToDo within/around this while
+            while (sing)
+            {
+                sing = singleClause(ref clauses, ref result);
+            }
+            sing = true;
+            if (unsingle)
+                unsat = true;
+
+            bkResult = result;
+
             while (true)
             {
+                if (unsat)
+                {
+                    Console.WriteLine("unsat");
+                    return;
+                }
+                clauses = bkClauses;
+                result = bkResult;
+                nextHypothes(ref clauses, sus, ref suppose);
+                if (unbranch)
+                {
+                    unsat = true;
+                    continue;
+                }
                 while (sing)
                 {
                     sing = singleClause(ref clauses, ref result);
-                    if (unsat && susPointer == 0)//ToDo
+                }
+                sing = true;
+                if (unsingle)
+                {
+                    for (int i = suppose.Length - 1; i >= 0; i--)
                     {
-                        Console.WriteLine("unsat");
-                        return;
+                        if (suppose[i] == null)
+                            suppose[i] = false;
+                        else
+                            break;
                     }
+                    unsingle = false;
                 }
                 if (clauses.Count == 0)
                     break;
@@ -142,8 +175,8 @@ namespace heliSAT
                 {
                     bool legacy = false;
                     result.TryGetValue(t.Key, out legacy);
-                    unsat = legacy != t.Value;
-                    if (unsat)
+                    unsingle = legacy != t.Value;
+                    if (unsingle)
                         break;
                 }
                 for (int i = 0; i < clauses.Count; i++)
@@ -196,6 +229,48 @@ namespace heliSAT
                 r.Add(a.Key, a.Value);
             }
             return r;
+        }
+
+        static void nextHypothes(ref List<Dictionary<int, bool>> clauses_original, int[] suspects, ref bool?[] susValue)
+        {
+            bool add = susValue[susValue.Length - 1] == null;
+            if (add)
+            {
+                int i = susValue.Length;
+                while (i > 0 && susValue[i - 1] == null)
+                    i--;
+                susValue[i] = true;
+            }
+            else
+            { 
+                for (int i = susValue.Length - 1; i >= 0; i--)
+                {
+                    if (susValue[i] == true)
+                    {
+                        susValue[i] = false;
+                        break;
+                    }
+                    else
+                    {
+                        if (i == 0)
+                        {
+                            unbranch = true;
+                            break;
+                        }
+                        susValue[i] = null;
+                    }
+                }
+            }
+            if (unbranch)
+                return;
+            for (int i = 0; i < susValue.Length; i++)
+            {
+                if (susValue == null)
+                    break;
+                Dictionary<int, bool> re = new Dictionary<int, bool>();
+                re.Add(suspects[i], Convert.ToBoolean(susValue[i]));
+                clauses_original.Add(re);
+            }
         }
     }
 }
