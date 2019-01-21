@@ -48,10 +48,7 @@ namespace heliSAT
             var clauses = readFile(path);
 
             Dictionary<int, bool> result = new Dictionary<int, bool>();
-            var sus = findSuspecious(clauses).Keys.ToArray();
-            var suppose = new bool?[sus.Length];
-            for (int i = 0; i < suppose.Length; i++)
-                suppose[i] = null;
+            
 
             bool sing = true;
             var bkResult = new Dictionary<int, bool>();
@@ -67,6 +64,11 @@ namespace heliSAT
             if (unsingle)
                 unsat = true;
 
+            var sus = findSuspecious(clauses).Keys.ToArray();
+            var suppose = new bool?[sus.Length];
+            for (int i = 0; i < suppose.Length; i++)
+                suppose[i] = null;
+
             bkResult = result;
 
             while (true)
@@ -74,6 +76,7 @@ namespace heliSAT
                 if (unsat)
                 {
                     Console.WriteLine("unsat");
+                    //Console.ReadLine();
                     return;
                 }
                 clauses = bkClauses;
@@ -122,8 +125,8 @@ namespace heliSAT
                         continue;
                     else if (splited[0] == "p")
                     {
-                        v_size = Convert.ToInt32(splited[2]);
-                        c_size = Convert.ToInt32(splited[3]);
+                        v_size = Convert.ToInt32(splited[1]);
+                        c_size = Convert.ToInt32(splited[2]);
                         continue;
                     }
                     else
@@ -167,8 +170,9 @@ namespace heliSAT
                           select a;
             if (singles.Count() == 0)
                 return false;
-            foreach (var a in singles)
+            for (int k = 0; k < singles.Count(); k++)
             {
+                var a = singles.ElementAt(k);
                 var t = a.Single();
                 var re = result.TryAdd(t.Key, t.Value);
                 if (!re)
@@ -177,7 +181,7 @@ namespace heliSAT
                     result.TryGetValue(t.Key, out legacy);
                     unsingle = legacy != t.Value;
                     if (unsingle)
-                        break;
+                        return false;
                 }
                 for (int i = 0; i < clauses.Count; i++)
                 {

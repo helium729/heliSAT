@@ -1,0 +1,10 @@
+D:\MacroHard\Projects\heliSAT\heliSAT\bin\Release\netcoreapp2.1\heliSAT.deps.json
+D:\MacroHard\Projects\heliSAT\heliSAT\bin\Release\netcoreapp2.1\heliSAT.runtimeconfig.json
+D:\MacroHard\Projects\heliSAT\heliSAT\bin\Release\netcoreapp2.1\heliSAT.runtimeconfig.dev.json
+D:\MacroHard\Projects\heliSAT\heliSAT\bin\Release\netcoreapp2.1\heliSAT.dll
+D:\MacroHard\Projects\heliSAT\heliSAT\bin\Release\netcoreapp2.1\heliSAT.pdb
+D:\MacroHard\Projects\heliSAT\heliSAT\obj\Release\netcoreapp2.1\heliSAT.csproj.CoreCompileInputs.cache
+D:\MacroHard\Projects\heliSAT\heliSAT\obj\Release\netcoreapp2.1\heliSAT.AssemblyInfoInputs.cache
+D:\MacroHard\Projects\heliSAT\heliSAT\obj\Release\netcoreapp2.1\heliSAT.AssemblyInfo.cs
+D:\MacroHard\Projects\heliSAT\heliSAT\obj\Release\netcoreapp2.1\heliSAT.dll
+D:\MacroHard\Projects\heliSAT\heliSAT\obj\Release\netcoreapp2.1\heliSAT.pdb
