@@ -1,5 +1,5 @@
 # heliSAT
-An attempt to build a SAT solver based on DPLL algorithm.
+This is an attempt to build a SAT solver based on DPLL algorithm, and a toy-level project.
 
 Platform: .NET Core 2.1
 
