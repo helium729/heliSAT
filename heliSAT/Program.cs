@@ -17,11 +17,11 @@ namespace heliSAT
                 return;
             }
             var path = args[0];
-
-
+            var clauses = readFile(path);
+            
         }
 
-        List<Dictionary<int, bool?>> readFile(string path)
+        static List<Dictionary<int, bool?>> readFile(string path)
         {
             try
             {
@@ -71,6 +71,11 @@ namespace heliSAT
             {
                 GC.Collect();
             }
+        }
+
+        static void singleClause(ref List<Dictionary<int, bool>> clauses)
+        {
+
         }
     }
 }
