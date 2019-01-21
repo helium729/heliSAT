@@ -2,7 +2,7 @@
   "profiles": {
     "heliSAT": {
       "commandName": "Project",
-      "commandLineArgs": "D:\\ok.cnf"
+      "commandLineArgs": "D:\\ojbk.cnf"
     }
   }
 }

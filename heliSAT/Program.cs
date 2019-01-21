@@ -105,6 +105,7 @@ namespace heliSAT
                 }
                 if (clauses.Count == 0)
                     break;
+                GC.Collect();
 
             }
             var re = from a in result
@@ -126,13 +127,15 @@ namespace heliSAT
                 while (!reader.EndOfStream)
                 {
                     var line = reader.ReadLine();
-                    var splited = line.Split(" ");
+                    if (line == "")
+                        continue;
+                    var splited = line.Split(" ", StringSplitOptions.RemoveEmptyEntries);
                     if (splited[0] == "c")
                         continue;
                     else if (splited[0] == "p")
                     {
-                        v_size = Convert.ToInt32(splited[1]);
-                        c_size = Convert.ToInt32(splited[2]);
+                        v_size = Convert.ToInt32(splited[2]);
+                        c_size = Convert.ToInt32(splited[3]);
                         continue;
                     }
                     else
@@ -174,11 +177,12 @@ namespace heliSAT
             var singles = from a in clauses
                           where a.Count == 1
                           select a;
+            var sings = singles.ToArray();
             if (singles.Count() == 0)
                 return false;
-            for (int k = 0; k < singles.Count(); k++)
+            for (int k = 0; k < sings.Length; k++)
             {
-                var a = singles.ElementAt(k);
+                var a = sings[k];
                 var t = a.Single();
                 var re = result.TryAdd(t.Key, t.Value);
                 if (!re)
