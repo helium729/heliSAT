@@ -1,0 +1,10 @@
+C:\Users\helium729\source\repos\helium729\heliSAT\heliSAT\bin\Debug\netcoreapp2.1\heliSAT.deps.json
+C:\Users\helium729\source\repos\helium729\heliSAT\heliSAT\bin\Debug\netcoreapp2.1\heliSAT.runtimeconfig.json
+C:\Users\helium729\source\repos\helium729\heliSAT\heliSAT\bin\Debug\netcoreapp2.1\heliSAT.runtimeconfig.dev.json
+C:\Users\helium729\source\repos\helium729\heliSAT\heliSAT\bin\Debug\netcoreapp2.1\heliSAT.dll
+C:\Users\helium729\source\repos\helium729\heliSAT\heliSAT\bin\Debug\netcoreapp2.1\heliSAT.pdb
+C:\Users\helium729\source\repos\helium729\heliSAT\heliSAT\obj\Debug\netcoreapp2.1\heliSAT.csproj.CoreCompileInputs.cache
+C:\Users\helium729\source\repos\helium729\heliSAT\heliSAT\obj\Debug\netcoreapp2.1\heliSAT.AssemblyInfoInputs.cache
+C:\Users\helium729\source\repos\helium729\heliSAT\heliSAT\obj\Debug\netcoreapp2.1\heliSAT.AssemblyInfo.cs
+C:\Users\helium729\source\repos\helium729\heliSAT\heliSAT\obj\Debug\netcoreapp2.1\heliSAT.dll
+C:\Users\helium729\source\repos\helium729\heliSAT\heliSAT\obj\Debug\netcoreapp2.1\heliSAT.pdb
