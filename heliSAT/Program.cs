@@ -54,6 +54,8 @@ namespace heliSAT
             bool sing = true;
             int susPointer = 0;
             Dictionary<int, bool> bk = new Dictionary<int, bool>();
+
+            //ToDo within/around this while
             while (true)
             {
                 while (sing)
@@ -70,7 +72,7 @@ namespace heliSAT
 
             }
 
-            //return;
+            return;
         }
 
         static List<Dictionary<int, bool>> readFile(string path)
