@@ -8,3 +8,4 @@ C:\Users\helium729\source\repos\helium729\heliSAT\heliSAT\obj\Debug\netcoreapp2.
 C:\Users\helium729\source\repos\helium729\heliSAT\heliSAT\obj\Debug\netcoreapp2.1\heliSAT.AssemblyInfo.cs
 C:\Users\helium729\source\repos\helium729\heliSAT\heliSAT\obj\Debug\netcoreapp2.1\heliSAT.dll
 C:\Users\helium729\source\repos\helium729\heliSAT\heliSAT\obj\Debug\netcoreapp2.1\heliSAT.pdb
+C:\Users\helium729\source\repos\helium729\heliSAT\heliSAT\obj\Debug\netcoreapp2.1\heliSAT.csprojAssemblyReference.cache
