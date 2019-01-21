@@ -8,3 +8,4 @@ D:\MacroHard\Projects\heliSAT\heliSAT\obj\Release\netcoreapp2.1\heliSAT.Assembly
 D:\MacroHard\Projects\heliSAT\heliSAT\obj\Release\netcoreapp2.1\heliSAT.AssemblyInfo.cs
 D:\MacroHard\Projects\heliSAT\heliSAT\obj\Release\netcoreapp2.1\heliSAT.dll
 D:\MacroHard\Projects\heliSAT\heliSAT\obj\Release\netcoreapp2.1\heliSAT.pdb
+D:\MacroHard\Projects\heliSAT\heliSAT\obj\Release\netcoreapp2.1\heliSAT.csprojAssemblyReference.cache

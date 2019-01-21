@@ -107,7 +107,13 @@ namespace heliSAT
                     break;
 
             }
-
+            var re = from a in result
+                     orderby a.Key
+                     select a;
+            foreach(var output in re)
+            {
+                Console.WriteLine(output.Key.ToString() + " " + output.Value.ToString());
+            }
             return;
         }
 
