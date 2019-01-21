@@ -25,6 +25,7 @@ namespace heliSAT
         {
             try
             {
+                List<Dictionary<int, bool?>> r = new List<Dictionary<int, bool?>>();
                 StreamReader reader = new StreamReader(path);
                 while (!reader.EndOfStream)
                 {
@@ -41,10 +42,23 @@ namespace heliSAT
                     else
                     {
                         Dictionary<int, bool?> clause = new Dictionary<int, bool?>();
-
+                        foreach (var a in splited)
+                        {
+                            if (a == "0")
+                                break;
+                            int temp = Convert.ToInt32(a);
+                            bool? v = true;
+                            if (temp < 0)
+                            {
+                                v = false;
+                                temp = 0 - temp;
+                            }
+                            clause.Add(temp, v);
+                        }
+                        r.Add(clause);
                     }
                 }
-                
+                return r;
             }
             catch (Exception e)
             {
