@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MacroHard\\Projects\\heliSAT\\heliSAT\\heliSAT.csproj",
+      "projectUniqueName": "C:\\Users\\helium729\\Source\\Repos\\heliSAT\\heliSAT\\heliSAT.csproj",
       "projectName": "heliSAT",
-      "projectPath": "D:\\MacroHard\\Projects\\heliSAT\\heliSAT\\heliSAT.csproj",
+      "projectPath": "C:\\Users\\helium729\\Source\\Repos\\heliSAT\\heliSAT\\heliSAT.csproj",
       "packagesPath": "C:\\Users\\helium729\\.nuget\\packages\\",
-      "outputPath": "D:\\MacroHard\\Projects\\heliSAT\\heliSAT\\obj\\",
+      "outputPath": "C:\\Users\\helium729\\Source\\Repos\\heliSAT\\heliSAT\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
